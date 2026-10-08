@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+
+xValues = [5, 3, 7, 9]
+yValues = [6, 2, 9, 12]
+xErrorValues = [1, 0.5, 0.6, 1.1]
+yErrorValues = [0.5]*4
+plt.errorbar(xValues, yValues, xerr = xErrorValues, yerr = yErrorValues, capsize = 10,
+  ecolor = 'red', marker = '.', markersize = 10, markerfacecolor = 'blue', linestyle = 'none')
+plt.show()

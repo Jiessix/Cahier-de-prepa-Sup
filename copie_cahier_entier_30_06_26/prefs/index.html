@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Mon compte</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport"/>
+<link href="../css/style.min__v=1202.css" rel="stylesheet"/>
+<link href="../css/icones.min__v=1200.css" rel="stylesheet"/>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/commun.min__v=1200.js" type="text/javascript"></script>
+<link href="../rss/8efd2688f2c842d60d3d/rss.xml" rel="alternate" title="Flux RSS" type="application/rss+xml"/>
+</head>
+<body data-action="prefsperso" data-csrf-token="1e3e19740b20cbda6da2b7f7a8fe0f03889f2b039eb1932b9366d5e4c4e2087c">
+<header><h1>Mon compte</h1></header>
+<nav>
+<div id="iconesmenu">
+<a class="icon-menu" title="Afficher le menu"></a>
+<a class="icon-accueil" href="../index.html" title="Revenir à la page d'accueil"></a>
+<a class="icon-recent" href="../recent/index.html" title="Voir les 0 nouveaux contenus">0</a>
+<a class="icon-rep" href="../docs/index.html" title="Voir les documents à télécharger"></a>
+<a class="icon-progcolles" href="../progcolles/index.html" title="Voir les programmes de colles"></a>
+<a class="icon-agenda" href="../agenda/index.html" title="Voir l'agenda"></a>
+<a class="icon-mail" href="../mail/index.html" title="Envoyer un mail"></a>
+<a class="icon-deconnexion" title="Se déconnecter"></a>
+</div>
+<div id="menu">
+<hr/>
+<a href="../docs/index__general.html"><span class="icon-rep"></span> Documents généraux</a>
+<a class="menurep" href="../docs/index__rep=58.html">LaTeX</a>
+<h3>Physique</h3>
+<a href="../progcolles/index__phys.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__phys.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Chimie</h3>
+<a href="../progcolles/index__chimie.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__chimie.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Mathématiques</h3>
+<a href="../progcolles/index__maths.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__maths.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<a class="menurep" href="../docs/index__rep=418.html">Cahier de calcul</a>
+<h3>Sciences industrielles pour l'ingénieur</h3>
+<a href="../index__sii_accueil.html">Accueil</a>
+<a href="../progcolles/index__sii.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__sii.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Informatique Tronc Commun</h3>
+<a href="../docs/index__info.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Français-Philosophie</h3>
+<a href="../docs/index__philo.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Anglais</h3>
+<a href="../docs/index__anglais.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>TIPE</h3>
+<a href="../docs/index__tipe.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<hr/>
+<a href="index.html" id="actuel"><span class="icon-prefs"></span> Mes préférences</a>
+<a href="../blogcdp/index.html"><span class="icon-messages"></span> Le blog de CdP</a>
+</div>
+</nav>
+<section>
+<article data-action="prefs1" data-id="mdp">
+<h3 class="edition">Modifier mon mot de passe</h3>
+<a class="icon-aide" title="Aide"></a>
+<a class="icon-ok" title="Valider les modifications"></a>
+<form>
+<p class="ligne"><label for="mdp1">Nouveau mot de passe : </label><input autocomplete="new-password" id="mdp1" name="mdp1" type="password" value=""/></p>
+<p class="ligne"><label for="mdp2">Confirmation : </label><input id="mdp2" name="mdp2" type="password" value=""/></p>
+</form>
+</article>
+<article data-action="prefs2" data-id="identite">
+<h3 class="edition">Mon identité</h3>
+<a class="icon-aide" title="Aide"></a>
+<a class="icon-ok" title="Valider les modifications"></a>
+<form>
+<p class="ligne"><label for="prenom">Prénom : </label><input id="prenom" name="prenom" size="50" type="text" value="Joachim"/></p>
+<p class="ligne"><label for="nom">Nom : </label><input id="nom" name="nom" size="50" type="text" value="Scherr"/></p>
+<p class="ligne"><label for="login">Identifiant : </label><input id="login" name="login" size="50" type="text" value="jscherr"/></p>
+</form>
+</article>
+<article data-action="prefs3" data-id="mail">
+<h3 class="edition">Mes courriels</h3>
+<a class="icon-aide" title="Aide"></a>
+<a class="icon-ok" title="Valider les modifications"></a>
+<form>
+<p class="ligne"><label for="mail">Adresse électronique : </label><input id="mail" name="mail" size="50" type="email" value="joachim.ig.scherr@gmail.com"/></p>
+<p class="ligne" style="display: none;"><label for="confirmation">Code de confirmation : </label><input disabled="" id="confirmation" name="confirmation" size="50" type="text" value=""/></p>
+<p>Un code de confirmation va être envoyé par courriel à la nouvelle adresse dans le cas d'une modification d'adresse électronique. Il n'est pas autorisé de saisir ici une adresse électronique utilisée par un autre compte.</p>
+</form>
+</article>
+<article data-action="prefs4" data-id="reglages">
+<h3 class="edition">Mes réglages techniques</h3>
+<a class="icon-aide" title="Aide"></a>
+<a class="icon-ok" title="Valider les modifications"></a>
+<form>
+<p class="ligne"><label for="mailcopie">Recevoir une copie des courriels envoyés : </label><input id="mailcopie" name="mailcopie" type="checkbox" value="1"/></p>
+<p class="ligne"><label for="permconn">Conserver ma connexion sur cet appareil : </label><input checked="" id="permconn" name="permconn" type="checkbox" value="1"/></p>
+<p class="ligne"><label for="timeout">Durée avant déconnexion : </label><input id="timeout" name="timeout" size="3" type="text" value="3600"/></p>
+</form>
+</article>
+<article id="rgpd">
+<h2>Données personnelles et compatibilité RGPD</h2>
+<p>Les informations recueillies par chaque Cahier de Prépa font l'objet d'un traitement informatique destiné à assurer le fonctionnement du Cahier (envoi de mail, affichage des coordonnées pour les professeurs, inscription des notes de colle). Seules sont stockées les informations strictement nécessaires au bon fonctionnement du service : nom, prénom et adresse électronique. Toutes ces données sont visibles et modifiables ci-dessus.</p>
+<p>Vos données, à l'exception de votre mot de passe, sont aussi accessibles et modifiables par l'ensemble des professeurs de la classe et l'administration de votre lycée, pour permettre le bon fonctionnement du Cahier. Par votre inscription sur ce Cahier, vous autorisez cela ainsi que le stockage de ces informations par l'administrateur du site. Les éventuelles notes de colles des élèves ne sont consultables que par les personnes concernées (élève, colleur, professeur de la matière, administration du lycée), sur les pages dédiées.</p>
+<p>Votre mot de passe vous est complètement personnel. Il est chiffré avant son stockage dans la base de données et ne peut donc techniquement être divulgué à personne.</p>
+<p>La suppression de votre compte doit passer par les professeurs de la classe ou administrateurs du Cahier. Le fonctionnement de la classe peut néanmoins nécessiter la conservation de votre compte au moins jusqu'à la fin de l'année scolaire.</p>
+<p>Les adresses IP ne sont pas conservées dans la base de données, mais chaque action de modification de la base conduit à l'écriture de l'adresse IP utilisée dans un journal.</p>
+<p>Aucun cookie n'est utilisé pour stocker des données. Seul un cookie de session (identifiant permettant de conserver l'identification d'une page à l'autre) est utilisé lorsque vous vous connectez, ainsi qu'un deuxième cookie d'identification lorsque vous activez la fonction de reconnexion automatique.</p>
+<p>Conformément à la <a href="https://www.cnil.fr/fr/loi-78-17-du-6-janvier-1978-modifiee">loi « informatique et libertés » du 6 janvier 1978 modifiée</a>, vous disposez d'un <a href="https://www.cnil.fr/fr/le-droit-dacces">droit d'accès</a> et d'un <a href="https://www.cnil.fr/fr/le-droit-de-rectification">droit de rectification</a> des informations qui vous concernent. Vous pouvez accéder aux informations vous concernant en vous connectant sur votre Cahier de Prépa ou en vous adressant à <a href="mailto:contact@cahier-de-prepa.fr">contact@cahier-de-prepa.fr</a>. Vous pouvez également, pour des motifs légitimes, <a href="https://www.cnil.fr/fr/le-droit-dopposition">vous opposer au traitement des données vous concernant</a>.</p>
+<p>Aucune de ces données ne sera communiquée à une autre organisation. Cahier de Prépa est un logiciel libre, cahier-de-prepa.fr est un service gratuit offert par un professeur de CPGE bénévole, sans publicité et sans vente de données.</p>
+<p>Le traitement des données réalisé par Cahier de Prépa est compatible avec le Réglement Général sur la Protection des Données.</p>
+</article>
+<div id="aide-prefs1">
+<h3>Aide et explications</h3>
+<p>Il est possible ici de modifier votre mot de passe. Une fois modifié, un formulaire est à valider par un clic sur le bouton <span class="icon-ok"></span> correspondant.</p>
+<p>Deux saisies identiques sont nécessaires afin d'éviter les erreurs de frappe.</p>
+<p>Votre mot de passe est stocké uniquement après avoir été chiffré dans la base de données du Cahier de Prépa. Il n'est jamais manipulé sans être préalablement chiffré. Même pour quelqu'un qui pourrait avoir accès directement à la base de données, il est quasiment impossible de récupérer votre mot de passe.</p>
+<p>Vous avez intérêt à utiliser un mot de passe qui vous est personnel, et à éviter les mots de passe faciles à deviner tels que « arnaud75 » ou « pikachu » (reprenant des mots entiers et une passion, une identité, une adresse...) pour éviter que quelqu'un puisse deviner votre mot de passe. Vous avez intérêt aussi à utiliser le même mot de passe sur tous les Cahiers de Prépa où vous pourriez vous connecter, c'est plus simple et sans risque.</p>
+</div>
+<div id="aide-prefs2">
+<h3>Aide et explications</h3>
+<p>Il est possible ici de modifier votre identité. Une fois modifié, un formulaire est à valider par un clic sur le bouton <span class="icon-ok"></span> correspondant.</p>
+<p>Ce formulaire sert particulièrement à corriger les erreurs de saisie dans votre nom-prénom. S'ils sont inversés, vous pouvez les échanger à nouveau.</p>
+<p>Votre <em>identifiant</em> de connexion est initialement de la forme « jdupont ». Vous pouvez le modifier et y mettre ce que vous souhaitez, y compris un simple prénom ou un pseudo, à condition de ne pas demander un identifiant déjà existant dans la base. Remarque : les professeurs et administrateurs du site peuvent voir cet identifiant.</p>
+</div>
+<div id="aide-prefs3">
+<h3>Aide et explications</h3>
+<p>Il est possible ici de modifier votre adresse électronique. Une fois modifié, un formulaire est à valider par un clic sur le bouton <span class="icon-ok"></span> correspondant.</p>
+<p>Pour modifier votre <em>adresse électronique</em>, vous devrez saisir cette nouvelle adresse et récupérer un <em>code de confirmation</em> de 8 caractères envoyé par courriel à cette adresse. Ce code est valable environ une heure (jusqu'à la prochaine heure pleine). La demande s'annule automatiquement si vous ne donnez pas suite. Vous pouvez demander à recevoir ce courriel autant de fois que vous le souhaitez.</p>
+<p>Il n'est pas possible d'affecter la même adresse électronique à deux comptes différents sur un même Cahier de Prépa.</p>
+<p>L'adresse électronique peut remplacer l'identifiant lorsque vous vous connectez, mais sert bien entendu à envoyer/recevoir des courriels à l'aide du Cahier.</p>
+<p>Vous pouvez de plus modifier le <em>Nom affiché comme expéditeur/destinataire de courriel</em>, qui est utilisé dans les entêtes d'expédition des courriels.</p>
+</div>
+<div id="aide-prefs4">
+<h3>Aide et explications</h3>
+<p>Il est possible ici de modifier vos préférences de connexion. Une fois modifié, un formulaire est à valider par un clic sur le bouton <span class="icon-ok"></span> correspondant.</p>
+<p>La case à cocher <em>Recevoir une copie des courriels envoyés</em> n'est qu'une valeur par défaut. Une case à cocher se trouve sur la page de <a href="../mail/index.html">rédaction des courriels</a>, vous permettant de modifier au cas par cas ce réglage. Il permet de recevoir sur son adresse électronique une copie des courriels envoyés, afin de l'archiver par exemple.</p>
+<p>Cocher la case <em>conserver ma connexion sur cet appareil</em> permet d'établir une reconnexion automatique à chaque visite, y compris d'un jour à l'autre. Cette connexion automatique permet de lire la plupart des contenus sans retaper son mot de passe. Pour des contenus sensibles ou des modifications du site, la saisie du mot de passe sera redemandée si la dernière visite est trop ancienne.</p>
+<p>La <em>durée avant déconnexion</em> correspond à la durée en secondes avant laquelle la déconnexion automatique a lieu. Si la case <em>conserver ma connexion sur cet appareil</em> n'est pas cochée, le site vous déconnectera et vous demandera de vous reconnecter complètement pour accéder à toute page protégée en lecture si vous laissez passer cette durée entre deux clics. Si la case <em>conserver ma connexion sur cet appareil</em> est cochée, il s'agit simplement d'une demande de mot de passe, et uniquement pour les pages sensibles du Cahier.</p>
+<h4>Conseils</h4>
+<p>La connexion automatique est indépendante à chaque appareil. Vous pouvez l'activer directement à la première connexion, sans venir jusqu'ici.</p>
+<p>Il est conseillé de cocher la case <em>conserver ma connexion sur cet appareil</em> sur les appareils sûrs : l'ordinateur à la maison, votre téléphone s'il se bloque au bout de quelques minutes d'inactivité. Il est conseillé de ne pas cocher cette case sur les appareils insuffisamment sûrs : typiquement, les ordinateurs du lycée, en salle de cours ou en salle des profs, surtout si vous avez tendance à vous absenter en laissant l'écran allumé sur votre session, avec des élèves ou des collègues farceurs dans la salle. Remarquez que c'est une très mauvaise idée et que d'autres problèmes plus importants pourraient survenir en faisant cela...</p>
+<p>Pour la <em>durée avant déconnexion</em>, un bon compromis est à trouver entre une reconnexion permanente et un risque sécuritaire trop important. Une valeur de 3600 (soit une heure) semble correcte.</p>
+<h4>Détails techniques</h4>
+<p>La connexion automatique est possible grâce à l'enregistrement dans votre navigateur d'un identifiant spécial, au sein d'un <em>cookie</em>. C'est le deuxième et dernier cookie qu'enregistre Cahier de Prépa sur votre machine, le premier étant nécessaire pour la simple navigation d'une page à l'autre (il est donc obligatoire à partir du moment où vous avez saisi votre mot de passe). La présence ou non de ce cookie sur votre navigateur permet d'établir ou non la connexion automatique, qui dépend donc bien de l'appareil. Vous pouvez le vérifier en visitant votre Cahier en activant la « navigation privée » dans votre navigateur : votre Cahier ne vous reconnaît plus.</p>
+<p>Il ne s'agit pas d'une reconnaissance par adresse IP par exemple. Aucune donnée personnelle supplémentaire n'est stockée sur vous pour assurer la connexion automatique.</p>
+</div>
+<!-- professeurs uniquement -->
+<div id="aide-prefs5">
+<h3>Aide et explications</h3>
+<p>Il est possible ici de modifier les <em>matières supplémentaires</em> affichées dans votre menu. Une fois modifié, un formulaire est à valider par un clic sur le bouton <span class="icon-ok"></span> correspondant.</p>
+<p>L'affichage par défaut, pour ne pas surcharger le menu, est de ne vous y afficher que les matières qui vous sont associées. Mais si vous le souhaitez, vous pouvez ajouter des matières de vos collègues. Cela ne vous donne pas de droits supplémentaires sur ces contenus, mais simplement la possibilité de les voir d'un simple clic. Vous ne pourrez alors voir que les resources dont l'accès est autorisé aux professeurs non associés à la matière. En particulier, les notes de colles et les transferts de documents personnels n'en font pas partie.</p>
+<p>Seuls les professeurs ont cette possibilité d'ajout de matières dans le menu. Les élèves, colleurs, comptes de type lycée ne peuvent pas ajouter au menu des matières qui ne leur sont pas associées.</p>
+<p>Dans le menu, vos matières sont bien entendu affichées en premier, suivi des <em>matières supplémentaires</em>. L'ordre des matières au sein de ces deux catégories est celui défini par la page de <a href="../matieres/index.html">gestion des matières</a>, qui est notamment utilisé pour les menus des élèves.</p>
+</div>
+</section>
+<footer>Ce site est réalisé par le logiciel <a href="https://cahier-de-prepa.fr">Cahier de prépa</a>, publié sous <a href="../Licence_CeCILL_V2-fr.html">licence libre</a>. <span class="icon-theme" title="Changer le thème lumineux/sombre"></span> <a class="icon-python" href="/basthon" title="Coder en Python directement dans votre navigateur"></a></footer>
+<div id="load"><img src="../js/ajax-loader.gif"/></div>
+<script src="../js/edition.min__v=1212.js" type="text/javascript"></script>
+<script src="/zfiles/mtm.min.js" type="text/javascript"></script>
+</body>
+</html>

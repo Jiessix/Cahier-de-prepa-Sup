@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Programme de colles - Physique</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport"/>
+<link href="../css/style.min__v=1202.css" rel="stylesheet"/>
+<link href="../css/icones.min__v=1200.css" rel="stylesheet"/>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/commun.min__v=1200.js" type="text/javascript"></script>
+<link href="../rss/8efd2688f2c842d60d3d/rss.xml" rel="alternate" title="Flux RSS" type="application/rss+xml"/>
+</head>
+<body data-csrf-token="1e3e19740b20cbda6da2b7f7a8fe0f03889f2b039eb1932b9366d5e4c4e2087c">
+<header><h1>Programme de colles - Physique</h1></header>
+<nav>
+<div id="iconesmenu">
+<a class="icon-menu" title="Afficher le menu"></a>
+<a class="icon-accueil" href="../index.html" title="Revenir à la page d'accueil"></a>
+<a class="icon-recent" href="../recent/index.html" title="Voir les 0 nouveaux contenus">0</a>
+<a class="icon-rep" href="../docs/index.html" title="Voir les documents à télécharger"></a>
+<a class="icon-progcolles" href="index.html" id="actuel2" title="Voir les programmes de colles"></a>
+<a class="icon-agenda" href="../agenda/index.html" title="Voir l'agenda"></a>
+<a class="icon-mail" href="../mail/index.html" title="Envoyer un mail"></a>
+<a class="icon-deconnexion" title="Se déconnecter"></a>
+</div>
+<div id="menu">
+<hr/>
+<a href="../docs/index__general.html"><span class="icon-rep"></span> Documents généraux</a>
+<a class="menurep" href="../docs/index__rep=58.html">LaTeX</a>
+<h3>Physique</h3>
+<a href="index__phys.html" id="actuel"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__phys.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Chimie</h3>
+<a href="index__chimie.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__chimie.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Mathématiques</h3>
+<a href="index__maths.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__maths.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<a class="menurep" href="../docs/index__rep=418.html">Cahier de calcul</a>
+<h3>Sciences industrielles pour l'ingénieur</h3>
+<a href="../index__sii_accueil.html">Accueil</a>
+<a href="index__sii.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__sii.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Informatique Tronc Commun</h3>
+<a href="../docs/index__info.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Français-Philosophie</h3>
+<a href="../docs/index__philo.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Anglais</h3>
+<a href="../docs/index__anglais.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>TIPE</h3>
+<a href="../docs/index__tipe.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<hr/>
+<a href="../prefs/index.html"><span class="icon-prefs"></span> Mes préférences</a>
+<a href="../blogcdp/index.html"><span class="icon-messages"></span> Le blog de CdP</a>
+</div>
+</nav>
+<section>
+<p class="topbarre" id="recherchecolle">
+<a class="icon-precedent" href="index__phys&amp;n=1.html" title="Semaine précédente"></a>
+<a class="icon-suivant" href="index__phys&amp;n=1.html" title="Semaine suivante"></a>
+<a class="icon-voirtout" href="index__phys&amp;tout.html" title="Voir l'ensemble du programme de colles"></a>
+<select id="semaines" onchange="window.location='?phys&amp;'+((this.value&gt;0)?'n='+this.value:'tout');">
+<option value="0">Toute l'année</option>
+<option value="1">lundi 1er septembre 2025</option>
+<option value="2">lundi 8 septembre 2025</option>
+<option value="3">lundi 15 septembre 2025</option>
+<option value="4">lundi 22 septembre 2025</option>
+<option value="5">lundi 29 septembre 2025</option>
+<option value="6">lundi 6 octobre 2025</option>
+<option value="7">lundi 13 octobre 2025</option>
+<option value="8">Vacances de la Toussaint</option>
+<option value="9">Vacances de la Toussaint</option>
+<option value="10">lundi 3 novembre 2025</option>
+<option value="11">lundi 10 novembre 2025</option>
+<option value="12">lundi 17 novembre 2025</option>
+<option value="13">lundi 24 novembre 2025</option>
+<option value="14">lundi 1er décembre 2025</option>
+<option value="15">lundi 8 décembre 2025</option>
+<option value="16">lundi 15 décembre 2025</option>
+<option value="17">Vacances de Noël</option>
+<option value="18">Vacances de Noël</option>
+<option value="19">lundi 5 janvier 2026</option>
+<option value="20">lundi 12 janvier 2026</option>
+<option value="21">lundi 19 janvier 2026</option>
+<option value="22">lundi 26 janvier 2026</option>
+<option value="23">lundi 2 février 2026</option>
+<option value="24">lundi 9 février 2026</option>
+<option value="25">lundi 16 février 2026</option>
+<option value="26">Vacances d'hiver</option>
+<option value="27">Vacances d'hiver</option>
+<option value="28">lundi 9 mars 2026</option>
+<option value="29">lundi 16 mars 2026</option>
+<option value="30">lundi 23 mars 2026</option>
+<option value="31">lundi 30 mars 2026</option>
+<option value="32">lundi 6 avril 2026</option>
+<option value="33">lundi 13 avril 2026</option>
+<option value="34">Vacances de printemps</option>
+<option value="35">Vacances de printemps</option>
+<option value="36">lundi 4 mai 2026</option>
+<option value="37">lundi 11 mai 2026</option>
+<option value="38">lundi 18 mai 2026</option>
+<option value="39">lundi 25 mai 2026</option>
+<option value="40">lundi 1er juin 2026</option>
+<option value="41">lundi 8 juin 2026</option>
+<option value="42">lundi 15 juin 2026</option>
+<option value="43">lundi 22 juin 2026</option>
+<option value="44">lundi 29 juin 2026</option>
+<option value="45">lundi 6 juillet 2026</option>
+</select>
+<span class="icon-recherche" onclick="window.location='?phys&amp;recherche='+$('.topbarre input').val();"></span>
+<input onchange="window.location='?phys&amp;recherche='+this.value;" placeholder="Rechercher un mot..." type="text" value=""/>
+</p>
+<article>
+<h3>Semaine du lundi 1er septembre 2025</h3>
+<p>Le programme de colles de cette semaine n'est pas défini.</p>
+</article>
+<article>
+<h3>Semaine du lundi 8 septembre 2025</h3>
+<p>Pas encore de colles, mais l'opportunité de bien s'entraîner sur les exercices du TD...</p>
+<p>Et sur la fiche 8 du cahier d'entraînement disponible en téléchargement.</p>
+</article>
+<article>
+<h3>Semaine du lundi 15 septembre 2025</h3>
+<p>Le programme de colles de cette semaine n'est pas défini.</p>
+</article>
+<article>
+<h3>Semaine du lundi 22 septembre 2025</h3>
+<p><a href="../download/index__id=6069.pdf">Programme de colle Semaine 2- Condorcet</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 29 septembre 2025</h3>
+<p><a href="../download/index__id=6091.pdf">Programme de colle - Condorcet 29-09</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 6 octobre 2025</h3>
+<p><a href="../download/index__id=6107.pdf">Programme de colle Semaine 3 : 6 octobre</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 13 octobre 2025</h3>
+<p><a href="../download/index__id=6113.pdf">Programme de colle Semaine 4 : 12 octobre</a></p>
+</article>
+<article>
+<h3>Lundi 20 octobre 2025 : Vacances de la Toussaint</h3>
+</article>
+<article>
+<h3>Lundi 27 octobre 2025 : Vacances de la Toussaint</h3>
+</article>
+<article>
+<h3>Semaine du lundi 3 novembre 2025</h3>
+<p><a href="../download/index__id=6130.pdf">Programme de colle Semaine 5 :03 novembre</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 10 novembre 2025</h3>
+<p><a href="../download/index__id=6154.pdf">Programme de colle Semaine 6 : 10 novembre</a></p>
+<p>ATTENTION! Les colles de Physique de Mme Lartigue, le lundi soir, seront désormais en salle 414 (salle de Physique) et non en 422 (Chimie). </p>
+</article>
+<article>
+<h3>Semaine du lundi 17 novembre 2025</h3>
+<p><a href="../download/index__id=6164.pdf">Programme de colle Semaine 7 : 17 novembre</a></p>
+<p>Je rappelle que les colles de Physique de Mme Lartigue (lundi soir) seront en 414 jusqu'à la fin de l'année.</p>
+</article>
+<article>
+<h3>Semaine du lundi 24 novembre 2025</h3>
+<p><a href="../download/index__id=6183.pdf">Programme de colle Semaine 8 : 24 novembre</a> </p>
+<p>Rappel: colles de Mme Lartigue en 414.</p>
+</article>
+<article>
+<h3>Semaine du lundi 1er décembre 2025</h3>
+<p><a href="../download/index__id=6191.pdf">Programme de colle Semaine 9 : 01 décembre</a></p>
+<p>Voici le programme de colle. Un effort particulier est attendu sur l'utilisation des nombres complexes en électricité.</p>
+</article>
+<article>
+<h3>Semaine du lundi 8 décembre 2025</h3>
+<p><a href="../download/index__id=6199.pdf">Programme de colle Semaine 10 : 08 décembre</a></p>
+<p>Bonnes révisions!</p>
+</article>
+<article>
+<h3>Semaine du lundi 15 décembre 2025</h3>
+<p><a href="../download/index__id=6217.pdf">Programme de colle Semaine 11 : 14 décembre</a></p>
+<p>Dernière semaine avant les vacances! </p>
+<p>Bon courage pour ces dernières colles!</p>
+</article>
+<article>
+<h3>Lundi 22 décembre 2025 : Vacances de Noël</h3>
+</article>
+<article>
+<h3>Lundi 29 décembre 2025 : Vacances de Noël</h3>
+</article>
+<article>
+<h3>Semaine du lundi 5 janvier 2026</h3>
+<p><a href="../download/index__id=6235.pdf">Programme de colle Semaine 12 : 05 janvier</a></p>
+<p>Meilleurs voeux à tous, de bonheur et de réussite!</p>
+<p>Je vous joins le programme de colle de la rentrée.</p>
+<p>Profitez bien de ces quelques jours restants pour arriver reposés et prêts à travailler!</p>
+</article>
+<article>
+<h3>Semaine du lundi 12 janvier 2026</h3>
+<p><a href="../download/index__id=6260.pdf">Programme de colle Semaine 13 : 12 JANVIER</a></p>
+<p>Ch P12 : Filtrage : Cours et exercices. </p>
+<p>Revoir la décomposition de Fourier, valeur moyenne, valeur efficace. </p>
+<p>Révisions sur le régime sinusoïdal forcé.</p>
+</article>
+<article>
+<h3>Semaine du lundi 19 janvier 2026</h3>
+<p><a href="../download/index__id=6274.pdf">Programme de colle Semaine 14 : 19 janvier</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 26 janvier 2026</h3>
+<p><a href="../download/index__id=6301.pdf">Programme de colle Semaine 15 : 26 janviers</a></p>
+<p>Bonnes révisions à tous!</p>
+</article>
+<article>
+<h3>Semaine du lundi 2 février 2026</h3>
+<p>Pas de colles cette semaine...</p>
+<p>L'occasion de bien travailler la cinématique et la dynamique en préparation des colles de la semaine prochaine... (et du DS!) </p>
+</article>
+<article>
+<h3>Semaine du lundi 9 février 2026</h3>
+<p><a href="../download/index__id=6322.pdf">Programme de colle Semaine 16 : 9 février</a></p>
+<p>Attention, les colles de Mme Lartigue seront en 414 pour tout le semestre!</p>
+</article>
+<article>
+<h3>Semaine du lundi 16 février 2026</h3>
+<p><a href="../download/index__id=6339.pdf">Programme de colle Semaine 17: 16 février</a></p>
+<p>Attention, les colles de Mme Lartigue seront en 414 pour tout le semestre!</p>
+</article>
+<article>
+<h3>Lundi 23 février 2026 : Vacances d'hiver</h3>
+</article>
+<article>
+<h3>Lundi 2 mars 2026 : Vacances d'hiver</h3>
+</article>
+<article>
+<h3>Semaine du lundi 9 mars 2026</h3>
+<p><a href="../download/index__id=6360.pdf">Programme de colle Semaine 18 : 9 mars</a></p>
+<p>Profitez des vacances pour faire des révisions approfondies en mécanique, en prévisions des prochains chapitres à venir à la rentrée (particulièrement: systèmes de coordonnées, lois de la mécanique, grandeurs énergétiques).</p>
+<p>Bon courage et bonnes vacances!</p>
+<p>Information importante: pour les colles des semaines du 6/04, 13/04, et 4/05, Mme Lartigue sera remplacée par M. Bodin et les colles seront décalées au mercredi 17h-18h de la même semaine. Cela concerne les groupes de colle 3, 9 et 2. </p>
+</article>
+<article>
+<h3>Semaine du lundi 16 mars 2026</h3>
+<p><a href="../download/index__id=6384.pdf">Programme de colle Semaine 19 : 16 mars</a></p>
+<p>Bonnes révisions à tous! </p>
+</article>
+<article>
+<h3>Semaine du lundi 23 mars 2026</h3>
+<p><a href="../download/index__id=6393.pdf">Programme de colle Semaine 20 : 23 mars</a></p>
+<p>----</p>
+<p>Information importante: pour les colles des semaines du 6/04, 13/04, et 4/05, Mme Lartigue sera remplacée par M. Bodin et les colles seront décalées au mercredi 17h-18h de la même semaine. Cela concerne les groupes de colle 3, 9 et 2.</p>
+</article>
+<article>
+<h3>Semaine du lundi 30 mars 2026</h3>
+<p><a href="../download/index__id=6400.pdf">Programme de colle Semaine 21 : 30 mars</a></p>
+<p>Information importante: pour les colles des semaines du 6/04, 13/04, et 4/05, Mme Lartigue sera remplacée par M. Bodin et les colles seront décalées au mercredi 17h-18h de la même semaine en salle 407. Cela concerne les groupes de colle 3, 9 et 2.</p>
+<p>-----</p>
+<p>Programme DST: toute la mécanique sauf ch 22 </p>
+</article>
+<article>
+<h3>Semaine du lundi 6 avril 2026</h3>
+<p><a href="../download/index__id=6408.pdf">Programme de colle Semaine 22 : 6 avril</a></p>
+Pour les colles des semaines du 6/04, 13/04, et 4/05, Mme Lartigue sera remplacée par M. Bodin et les colles seront décalées au mercredi 17h-18h de la même semaine en salle 407. Cela concerne les groupes de colle 3, 9 et 2.
+</article>
+<article>
+<h3>Semaine du lundi 13 avril 2026</h3>
+<p>Pour les colles des semaines du 6/04, 13/04, et 4/05, Mme Lartigue sera remplacée par M. Bodin et les colles seront décalées au mercredi 17h-18h de la même semaine en salle 407. Cela concerne les groupes de colle 3, 9 et 2.</p>
+<p><a href="../download/index__id=6422.pdf">Programme de colle Semaine 23 : 11 avril</a></p>
+</article>
+<article>
+<h3>Lundi 20 avril 2026 : Vacances de printemps</h3>
+</article>
+<article>
+<h3>Lundi 27 avril 2026 : Vacances de printemps</h3>
+</article>
+<article>
+<h3>Semaine du lundi 4 mai 2026</h3>
+<p><a href="../download/index__id=6434.pdf">Programme de colle Semaine 24 : 04 mai</a></p>
+</article>
+<article>
+<h3>Semaine du lundi 11 mai 2026</h3>
+<p>Pas de colles!</p>
+</article>
+<article>
+<h3>Semaine du lundi 18 mai 2026</h3>
+<p><a href="../download/index__id=6454.pdf">Programme de colle Semaine 25 : 18 mai</a></p>
+<p>En raison d'un départ en stage à l'étranger, M. Pensec sera remplacé par Mme Martory dès le 21 mai et jusqu'à la fin de l'année.</p>
+<p>La colle sera décalée le jeudi (même jour) de 18h à 19h en salle 300. </p>
+<p>Attention, la colle de Mme Martory de 17h à 18h sera également désormais EN SALLE 300. </p>
+<p>En cas d'impossibilité exceptionnelle, me contacter. </p>
+</article>
+<article>
+<h3>Semaine du lundi 25 mai 2026</h3>
+<p><a href="../download/index__id=6475.pdf">Programme de colle Semaine 26 : 25 mai</a></p>
+<p>En raison d'un départ en stage à l'étranger, M. Pensec sera remplacé par Mme Martory dès le 21 mai et jusqu'à la fin de l'année. La colle sera décalée le jeudi (même jour) de 18h à 19h en salle 300. Attention, la colle de Mme Martory de 17h à 18h sera également désormais EN SALLE 300. En cas d'impossibilité exceptionnelle, me contacter.</p>
+</article>
+<article>
+<h3>Semaine du lundi 1er juin 2026</h3>
+<p><a href="../download/index__id=6486.pdf">Programme de colle Semaine 27 : 1er juin</a></p>
+<p>--- </p>
+<p>En raison d'un départ en stage à l'étranger, M. Pensec sera remplacé par Mme Martory dès le 21 mai et jusqu'à la fin de l'année. La colle sera décalée le jeudi (même jour) de 18h à 19h en salle 300. Attention, la colle de Mme Martory de 17h à 18h sera également désormais EN SALLE 300. En cas d'impossibilité exceptionnelle, me contacter.</p>
+</article>
+<article>
+<h3>Semaine du lundi 8 juin 2026</h3>
+<p><a href="../download/index__id=6495.pdf">Programme de colle Semaine 28 : 8 juin</a></p>
+<p>A partir du 10 juin et jusqu'à la fin de l'année, M. Turcis sera remplacé par M. KARADENIZ.</p>
+<p>La colle sera décalée de 18h à 19h le même jour (mercredi) en SALLE 301 
+<p>Révisez particulièrement les machines thermiques, le corps pur sous 2 phases et l'hydrostatique. </p>
+</p></article>
+<article>
+<h3>Semaine du lundi 15 juin 2026</h3>
+<p><a href="../download/index__id=6510.pdf">Programme de colle Semaine 29 : 15 juin</a></p>
+<p>A partir du 10 juin et jusqu'à la fin de l'année, M. Turcis sera remplacé par M. KARADENIZ. La colle sera décalée de 18h à 19h le même jour (mercredi) en SALLE 301 </p>
+</article>
+<article>
+<h3>Semaine du lundi 22 juin 2026</h3>
+<p><a href="../download/index__id=6528.pdf">Programme de colle Semaine 30 : 22 juin</a></p>
+<p>Bon courage pour cette dernière semaine de colles!</p>
+<p>Certaines colles pourront peut-être être décalées en raison de la chaleur, ou avancées si vous finissez plus tôt, contactez-moi si vous avez besoin de l'e-mail d'un(e) colleur/euse!</p>
+<p>Dernière ligne droite pour le magnétisme!</p>
+<p>Rappel: A partir du 10 juin et jusqu'à la fin de l'année, M. Turcis sera remplacé par M. KARADENIZ. La colle sera décalée de 18h à 19h le même jour (mercredi) en SALLE 301 </p>
+</article>
+<article>
+<h3>Semaine du lundi 29 juin 2026</h3>
+<p>Le programme de colles de cette semaine n'est pas défini.</p>
+</article>
+<article>
+<h3>Semaine du lundi 6 juillet 2026</h3>
+<p>Le programme de colles de cette semaine n'est pas défini.</p>
+</article>
+</section>
+<footer>Ce site est réalisé par le logiciel <a href="https://cahier-de-prepa.fr">Cahier de prépa</a>, publié sous <a href="../Licence_CeCILL_V2-fr.html">licence libre</a>. <span class="icon-theme" title="Changer le thème lumineux/sombre"></span> <a class="icon-python" href="/basthon" title="Coder en Python directement dans votre navigateur"></a></footer>
+<div id="load"><img src="../js/ajax-loader.gif"/></div>
+<script src="../js/lecture.min__v=1210.js" type="text/javascript"></script>
+<script src="/zfiles/mtm.min.js" type="text/javascript"></script>
+</body>
+</html>

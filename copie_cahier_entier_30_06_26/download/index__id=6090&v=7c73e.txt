@@ -1,0 +1,42 @@
+########## CODES CAPYTALE DES SUJETS ET CORRIGES DE TP ##########
+
+TP1 : introduction à Python
+énoncé : d496-7044876
+corrigé : 5fd8-7049489
+
+
+TP2 : listes
+énoncé : 0bdb-7266635
+corrigé : 5946-7266648
+
+TP3 : récursivité 
+énoncé : 92e8-7525892
+corrigé : 565d-7525912
+
+TP4 : tris
+énoncé : 007e-7828701
+corrigé : 85b1-7604463
+
+TP5 : performance des tris 
+énoncé : b4ee-8122400
+corrigé : d15c-8089158
+
+TP6 : récursif vs impératif 
+énoncé : 1027-8412358
+corrigé : af47-8412394
+
+TP7 : manipulation d'images
+énoncé : 6efd-8722659
+corrigé : 6267-8703441
+
+TP8 : algorithmes gloutons
+énoncé : 2c13-9037839
+corrigé : 6267-8703441
+
+TP9 : gloutons bis
+énoncé : 903f-9342792 
+corrigé : 19c2-9281132
+
+TP10 : produit matriciel
+énoncé : ad22-9629843
+corrigé : 6fb1-9613845

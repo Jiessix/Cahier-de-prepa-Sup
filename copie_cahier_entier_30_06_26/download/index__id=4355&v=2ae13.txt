@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+
+listAbs = [0,2,6,9]
+listOrd = [-1,-2,0,5]
+
+plt.close('all')
+plt.plot(listAbs,listOrd,'x',color='r')
+plt.xlabel("abscisse en ??")
+plt.ylabel("ordonnée en ??")
+plt.show()

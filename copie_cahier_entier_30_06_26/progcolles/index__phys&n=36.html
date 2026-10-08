@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Programme de colles - Physique</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport"/>
+<link href="../css/style.min__v=1202.css" rel="stylesheet"/>
+<link href="../css/icones.min__v=1200.css" rel="stylesheet"/>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/commun.min__v=1200.js" type="text/javascript"></script>
+<link href="../rss/8efd2688f2c842d60d3d/rss.xml" rel="alternate" title="Flux RSS" type="application/rss+xml"/>
+</head>
+<body data-csrf-token="1e3e19740b20cbda6da2b7f7a8fe0f03889f2b039eb1932b9366d5e4c4e2087c">
+<header><h1>Programme de colles - Physique</h1></header>
+<nav>
+<div id="iconesmenu">
+<a class="icon-menu" title="Afficher le menu"></a>
+<a class="icon-accueil" href="../index.html" title="Revenir à la page d'accueil"></a>
+<a class="icon-recent" href="../recent/index.html" title="Voir les 0 nouveaux contenus">0</a>
+<a class="icon-rep" href="../docs/index.html" title="Voir les documents à télécharger"></a>
+<a class="icon-progcolles" href="index.html" id="actuel2" title="Voir les programmes de colles"></a>
+<a class="icon-agenda" href="../agenda/index.html" title="Voir l'agenda"></a>
+<a class="icon-mail" href="../mail/index.html" title="Envoyer un mail"></a>
+<a class="icon-deconnexion" title="Se déconnecter"></a>
+</div>
+<div id="menu">
+<hr/>
+<a href="../docs/index__general.html"><span class="icon-rep"></span> Documents généraux</a>
+<a class="menurep" href="../docs/index__rep=58.html">LaTeX</a>
+<h3>Physique</h3>
+<a href="index__phys.html" id="actuel"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__phys.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Chimie</h3>
+<a href="index__chimie.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__chimie.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Mathématiques</h3>
+<a href="index__maths.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__maths.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<a class="menurep" href="../docs/index__rep=418.html">Cahier de calcul</a>
+<h3>Sciences industrielles pour l'ingénieur</h3>
+<a href="../index__sii_accueil.html">Accueil</a>
+<a href="index__sii.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__sii.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Informatique Tronc Commun</h3>
+<a href="../docs/index__info.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Français-Philosophie</h3>
+<a href="../docs/index__philo.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Anglais</h3>
+<a href="../docs/index__anglais.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>TIPE</h3>
+<a href="../docs/index__tipe.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<hr/>
+<a href="../prefs/index.html"><span class="icon-prefs"></span> Mes préférences</a>
+<a href="../blogcdp/index.html"><span class="icon-messages"></span> Le blog de CdP</a>
+</div>
+</nav>
+<section>
+<p class="topbarre" id="recherchecolle">
+<a class="icon-precedent" href="index__phys&amp;n=35.html" title="Semaine précédente"></a>
+<a class="icon-suivant" href="index__phys&amp;n=37.html" title="Semaine suivante"></a>
+<a class="icon-voirtout" href="index__phys&amp;tout.html" title="Voir l'ensemble du programme de colles"></a>
+<select id="semaines" onchange="window.location='?phys&amp;'+((this.value&gt;0)?'n='+this.value:'tout');">
+<option value="0">Toute l'année</option>
+<option value="1">lundi 1er septembre 2025</option>
+<option value="2">lundi 8 septembre 2025</option>
+<option value="3">lundi 15 septembre 2025</option>
+<option value="4">lundi 22 septembre 2025</option>
+<option value="5">lundi 29 septembre 2025</option>
+<option value="6">lundi 6 octobre 2025</option>
+<option value="7">lundi 13 octobre 2025</option>
+<option value="8">Vacances de la Toussaint</option>
+<option value="9">Vacances de la Toussaint</option>
+<option value="10">lundi 3 novembre 2025</option>
+<option value="11">lundi 10 novembre 2025</option>
+<option value="12">lundi 17 novembre 2025</option>
+<option value="13">lundi 24 novembre 2025</option>
+<option value="14">lundi 1er décembre 2025</option>
+<option value="15">lundi 8 décembre 2025</option>
+<option value="16">lundi 15 décembre 2025</option>
+<option value="17">Vacances de Noël</option>
+<option value="18">Vacances de Noël</option>
+<option value="19">lundi 5 janvier 2026</option>
+<option value="20">lundi 12 janvier 2026</option>
+<option value="21">lundi 19 janvier 2026</option>
+<option value="22">lundi 26 janvier 2026</option>
+<option value="23">lundi 2 février 2026</option>
+<option value="24">lundi 9 février 2026</option>
+<option value="25">lundi 16 février 2026</option>
+<option value="26">Vacances d'hiver</option>
+<option value="27">Vacances d'hiver</option>
+<option value="28">lundi 9 mars 2026</option>
+<option value="29">lundi 16 mars 2026</option>
+<option value="30">lundi 23 mars 2026</option>
+<option value="31">lundi 30 mars 2026</option>
+<option value="32">lundi 6 avril 2026</option>
+<option value="33">lundi 13 avril 2026</option>
+<option value="34">Vacances de printemps</option>
+<option value="35">Vacances de printemps</option>
+<option selected="" value="36">lundi 4 mai 2026</option>
+<option value="37">lundi 11 mai 2026</option>
+<option value="38">lundi 18 mai 2026</option>
+<option value="39">lundi 25 mai 2026</option>
+<option value="40">lundi 1er juin 2026</option>
+<option value="41">lundi 8 juin 2026</option>
+<option value="42">lundi 15 juin 2026</option>
+<option value="43">lundi 22 juin 2026</option>
+<option value="44">lundi 29 juin 2026</option>
+<option value="45">lundi 6 juillet 2026</option>
+</select>
+<span class="icon-recherche" onclick="window.location='?phys&amp;recherche='+$('.topbarre input').val();"></span>
+<input onchange="window.location='?phys&amp;recherche='+this.value;" placeholder="Rechercher un mot..." type="text" value=""/>
+</p>
+<article>
+<h3>Semaine du lundi 4 mai 2026</h3>
+<p><a href="../download/index__id=6434.pdf">Programme de colle Semaine 24 : 04 mai</a></p>
+</article>
+</section>
+<footer>Ce site est réalisé par le logiciel <a href="https://cahier-de-prepa.fr">Cahier de prépa</a>, publié sous <a href="../Licence_CeCILL_V2-fr.html">licence libre</a>. <span class="icon-theme" title="Changer le thème lumineux/sombre"></span> <a class="icon-python" href="/basthon" title="Coder en Python directement dans votre navigateur"></a></footer>
+<div id="load"><img src="../js/ajax-loader.gif"/></div>
+<script src="../js/lecture.min__v=1210.js" type="text/javascript"></script>
+<script src="/zfiles/mtm.min.js" type="text/javascript"></script>
+</body>
+</html>

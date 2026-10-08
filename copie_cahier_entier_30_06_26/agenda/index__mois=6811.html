@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Agenda - Novembre 2068</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, height=device-height, initial-scale=1.0" name="viewport"/>
+<link href="../css/style.min__v=1202.css" rel="stylesheet"/>
+<link href="../css/icones.min__v=1200.css" rel="stylesheet"/>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/commun.min__v=1200.js" type="text/javascript"></script>
+<link href="../rss/8efd2688f2c842d60d3d/rss.xml" rel="alternate" title="Flux RSS" type="application/rss+xml"/>
+</head>
+<body data-csrf-token="1e3e19740b20cbda6da2b7f7a8fe0f03889f2b039eb1932b9366d5e4c4e2087c">
+<header><h1>Agenda - Novembre 2068</h1></header>
+<nav>
+<div id="iconesmenu">
+<a class="icon-menu" title="Afficher le menu"></a>
+<a class="icon-accueil" href="../index.html" title="Revenir à la page d'accueil"></a>
+<a class="icon-recent" href="../recent/index.html" title="Voir les 0 nouveaux contenus">0</a>
+<a class="icon-rep" href="../docs/index.html" title="Voir les documents à télécharger"></a>
+<a class="icon-progcolles" href="../progcolles/index.html" title="Voir les programmes de colles"></a>
+<a class="icon-agenda" href="index.html" id="actuel" title="Voir l'agenda"></a>
+<a class="icon-mail" href="../mail/index.html" title="Envoyer un mail"></a>
+<a class="icon-deconnexion" title="Se déconnecter"></a>
+</div>
+<div id="menu">
+<hr/>
+<a href="../docs/index__general.html"><span class="icon-rep"></span> Documents généraux</a>
+<a class="menurep" href="../docs/index__rep=58.html">LaTeX</a>
+<h3>Physique</h3>
+<a href="../progcolles/index__phys.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__phys.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Chimie</h3>
+<a href="../progcolles/index__chimie.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__chimie.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Mathématiques</h3>
+<a href="../progcolles/index__maths.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__maths.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<a class="menurep" href="../docs/index__rep=418.html">Cahier de calcul</a>
+<h3>Sciences industrielles pour l'ingénieur</h3>
+<a href="../index__sii_accueil.html">Accueil</a>
+<a href="../progcolles/index__sii.html"><span class="icon-progcolles"></span> Programme de colles</a>
+<a href="../docs/index__sii.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Informatique Tronc Commun</h3>
+<a href="../docs/index__info.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Français-Philosophie</h3>
+<a href="../docs/index__philo.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>Anglais</h3>
+<a href="../docs/index__anglais.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<h3>TIPE</h3>
+<a href="../docs/index__tipe.html"><span class="icon-rep"></span> Documents à télécharger</a>
+<hr/>
+<a href="../prefs/index.html"><span class="icon-prefs"></span> Mes préférences</a>
+<a href="../blogcdp/index.html"><span class="icon-messages"></span> Le blog de CdP</a>
+</div>
+</nav>
+<section>
+<p class="topbarre" id="rechercheagenda">
+<a class="icon-precedent" href="index__mois=6810.html" title="Plus tôt"></a>
+<a class="icon-suivant" href="index__mois=6812.html" title="Plus tard"></a>
+<select id="vue" onchange="window.location.href='agenda?vue='+(this.value == 1 ? 'mois' : 'semaine')"><option selected="" value="1">Vue mensuelle</option><option value="2">Vue hebdomadaire</option></select>
+</p>
+<div id="calendrier">
+<table id="semaine">
+<thead>
+<tr>
+<th>Lundi</th>
+<th>Mardi</th>
+<th>Mercredi</th>
+<th>Jeudi</th>
+<th>Vendredi</th>
+<th>Samedi</th>
+<th>Dimanche</th>
+</tr>
+</thead>
+</table>
+<div style="height: 6.25em">
+<table class="semaine-bg" style="height: 6.25em">
+<tbody>
+<tr>
+<td class="autremois"></td>
+<td class="autremois"></td>
+<td class="autremois"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="evenements">
+<thead>
+<tr>
+<th class="autremois">29</th>
+<th class="autremois">30</th>
+<th class="autremois">31</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div style="height: 6.25em">
+<table class="semaine-bg" style="height: 6.25em">
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="evenements">
+<thead>
+<tr>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div style="height: 6.25em">
+<table class="semaine-bg" style="height: 6.25em">
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="evenements">
+<thead>
+<tr>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div style="height: 6.25em">
+<table class="semaine-bg" style="height: 6.25em">
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="evenements">
+<thead>
+<tr>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+<th>22</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div style="height: 6.25em">
+<table class="semaine-bg" style="height: 6.25em">
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td class="autremois"></td>
+<td class="autremois"></td>
+</tr>
+</tbody>
+</table>
+<table class="evenements">
+<thead>
+<tr>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+<th class="autremois">1</th>
+<th class="autremois">2</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<footer>Ce site est réalisé par le logiciel <a href="https://cahier-de-prepa.fr">Cahier de prépa</a>, publié sous <a href="../Licence_CeCILL_V2-fr.html">licence libre</a>. <span class="icon-theme" title="Changer le thème lumineux/sombre"></span> <a class="icon-python" href="/basthon" title="Coder en Python directement dans votre navigateur"></a></footer>
+<div id="load"><img src="../js/ajax-loader.gif"/></div>
+<script src="../js/lecture.min__v=1210.js" type="text/javascript"></script>
+<script src="/zfiles/mtm.min.js" type="text/javascript"></script>
+</body>
+</html>

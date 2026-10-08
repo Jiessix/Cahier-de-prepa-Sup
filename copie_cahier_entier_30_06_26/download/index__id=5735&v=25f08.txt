@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=1]
+\draw[->,>=latex] (0,0) -- (1.5,0) node[right] {$\overrightarrow{z_0}$};
+\draw[->,>=latex] (0,0) -- (1.36,0.64) node[right,yshift=3] {$\overrightarrow{z_1}$};
+\draw[->,>=latex] (0,0) -- (0,1.5) node[above] {$\overrightarrow{x_0}$};
+\draw[->,>=latex] (0,0) -- (-0.64,1.36) node[above,xshift=-3] {$\overrightarrow{x_1}$};
+\draw[fill=white] (0,0) circle (0.15) node[below] {$\overrightarrow{y_0}=\overrightarrow{y_1}$};
+\draw[fill=black] (0,0) circle (0.06);
+\draw[->,>=latex] (1,0) arc (0:25:1) node[right,xshift=2,yshift=-5] {$\theta_1$} ;
+\draw[->,>=latex] (0,1) arc (90:115:1) node[above,xshift=5,yshift=1] {$\theta_1$} ;
+\end{tikzpicture}
